@@ -12,6 +12,10 @@ export class QuotesComponent implements OnInit {
     new Quote(1, '"We grow fearless when we do the things we fear."',"Robin Sharma", new Date (2022,2,12))
   ]
 
+  toggleDetails(index: any) {
+    this.quote[index].showDescription = !this.quote[index].showDescription
+  }
+
   constructor() { }
 
   ngOnInit(): void {
